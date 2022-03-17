@@ -76,6 +76,19 @@ img{
 }
 `
 
+const BottomLink = styled.div`
+position: absolute;
+text-align: center;
+transform: translate(75%, 0%);
+bottom: 5%;
+color: #fff;
+border-bottom: 1px solid white;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+`
+
 
 const StoryPage = () => {
 
@@ -98,6 +111,11 @@ const StoryPage = () => {
                         <img src={fireteam} alt='fireteam' />
                     </Fireteam>
                 </motion.div>
+                <BottomLink>
+                    <a href='https://www.bungie.net/7/en/Destiny/WitchQueen'>
+                        <h1>Learn more about the story at Bungie!!</h1>
+                    </a>
+                </BottomLink>
             </MainContainer>
         </motion.div >
     )

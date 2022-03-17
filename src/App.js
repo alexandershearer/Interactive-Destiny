@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Route, Routes, Link, useLocation } from "react-router-dom"
+import CraftingPage from "./components/Crafting";
 import Main from "./components/Main";
 import StoryPage from "./components/Story";
 import VendorsPage from "./components/Vendors";
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/story" element={<StoryPage />} />
         <Route path="/vendors" element={<VendorsPage />} />
-        <Route path="crafting" />
+        <Route path="crafting" element={<CraftingPage />} />
       </Routes>
     </AnimatePresence>
   );
